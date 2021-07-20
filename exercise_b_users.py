@@ -66,6 +66,7 @@ print(users["Avril"]["pets"][0]["species"])
 ericl = users["Erik"]["lottery_numbers"]
 ericl.sort()
 print(ericl)
+# sorted(users["Erik"]["lottery_numbers"])[0]
 # 6. Return an array of Avril's lottery numbers that are even
 avrill = users["Avril"]["lottery_numbers"]
 avril_even = []
@@ -81,7 +82,7 @@ print(ericl)
 users["Erik"]["home_town"] = "Edinburgh"
 print(users["Erik"]["home_town"])
 # 9. Add a pet dog to Erik called "Fluffy"
-users["Erik"]["pets"][0]["dog"] = "Fluffy"
+# users["Erik"]["pets"][0]["dog"] = "Fluffy" - nope -- access the list and append a new dictionary
 # 10. Add another person to the users dictionary
 users["Nathan"] = "new user"
 print(users)
